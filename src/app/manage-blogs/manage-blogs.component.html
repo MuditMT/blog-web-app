@@ -1,0 +1,16 @@
+<div class="row">
+    <table>
+        <tr>
+          <th>S No.</th>
+          <th>Blog Title</th>
+          <th>Actions</th>
+        </tr>
+        <tr *ngFor="let user of userBlog; let i=index">
+          <td>{{i+1}}</td>
+          <td>{{user.userTitle}}</td>
+          <td> <button [routerLink]="['/update-blog',user.userId]">Edit</button> 
+               <button (click)="deleteBlog(user.userId)">Delete</button>  
+               <button [routerLink]="['/view-blog',user.userId]">View</button> </td>
+        </tr>  
+      </table>
+</div>

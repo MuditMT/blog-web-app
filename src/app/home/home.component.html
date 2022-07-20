@@ -1,0 +1,18 @@
+<h1>My Blogs </h1><br>
+<div style="text-align:center;padding:15px;">
+  <a class="anchor" routerLink="create">Want to add new blog Click Here</a>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+</div>
+
+<div class="container">
+    <div   *ngFor="let user of userBlog">
+      <a [routerLink]="['/view-blog',user.userId]">
+        <div class="child">
+     <h3 style="color: black;">{{user.userTitle}}</h3>  <br> 
+      {{user.userDescription}} 
+    </div>
+    </a>
+  
+    </div> 
+  
+
+</div>

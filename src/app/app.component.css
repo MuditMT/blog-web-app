@@ -1,0 +1,24 @@
+ul {
+    height:45px;
+    border: 1px ridge rgb(180, 176, 176);
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #e6e6e6;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgb(191, 214, 126);
+}
